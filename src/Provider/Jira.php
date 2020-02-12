@@ -1,12 +1,12 @@
 <?php
 
-namespace Mrjoops\OAuth2\Client\Provider;
+namespace RadDevon\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\ArrayAccessorTrait;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
-use Mrjoops\OAuth2\Client\Provider\Exception\JiraIdentityProviderException;
+use RadDevon\OAuth2\Client\Provider\Exception\JiraIdentityProviderException;
 use Psr\Http\Message\ResponseInterface;
 
 class Jira extends AbstractProvider

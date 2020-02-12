@@ -1,8 +1,8 @@
 <?php
 
-namespace Mrjoops\OAuth2\Client\Test\Provider;
+namespace RadDevon\OAuth2\Client\Test\Provider;
 
-use Mrjoops\OAuth2\Client\Provider\JiraResourceOwner;
+use RadDevon\OAuth2\Client\Provider\JiraResourceOwner;
 
 class JiraResourceOwnerTest extends \PHPUnit_Framework_TestCase
 {
