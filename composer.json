@@ -1,5 +1,5 @@
 {
-    "name": "mrjoops/oauth2-jira",
+    "name": "raddevon/oauth2-jira",
     "description": "Jira OAuth 2.0 support for the PHP League's OAuth 2.0 Client",
     "type": "library",
     "require": {
@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Mrjoops\\OAuth2\\Client\\": "src/"
+            "RadDevon\\OAuth2\\Client\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mrjoops\\OAuth2\\Client\\Test\\": "test/src/"
+            "RadDevon\\OAuth2\\Client\\Test\\": "test/src/"
         }
     },
     "license": "MIT",

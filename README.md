@@ -6,24 +6,24 @@
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/mrjoops/oauth2-jira.svg?style=flat-square)](https://scrutinizer-ci.com/g/mrjoops/oauth2-jira/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/mrjoops/oauth2-jira.svg?style=flat-square)](https://scrutinizer-ci.com/g/mrjoops/oauth2-jira)
 
-This package provides Jira OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
+This package provides Jira OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client). This is a fork of [mrjoops/oauth2-jira](https://github.com/mrjoops/oauth2-jira), but I have pushed a new release to Packagist with the correct provider URLs.
 
 ## Installation
 
 To install, use composer:
 
 ```
-composer require mrjoops/oauth2-jira
+composer require raddevon/oauth2-jira
 ```
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\Mrjoops\OAuth2\Client\Provider\Jira` as the provider.
+Usage is the same as The League's OAuth client, using `\RadDevon\OAuth2\Client\Provider\Jira` as the provider.
 
 ### Authorization Code Flow
 
 ```php
-$provider = new Mrjoops\OAuth2\Client\Provider\Jira([
+$provider = new RadDevon\OAuth2\Client\Provider\Jira([
     'clientId'          => '{jira-client-id}',
     'clientSecret'      => '{jira-client-secret}',
     'redirectUri'       => 'https://example.com/callback-url',
@@ -98,7 +98,7 @@ Since your Jira Cloud API URL vary, you can get it using the `getApiUrl()` metho
 
 ```php
 $request = $provider->getAuthenticatedRequest(
-    \Mrjoops\OAuth2\Client\Provider\Jira::METHOD_GET,
+    \RadDevon\OAuth2\Client\Provider\Jira::METHOD_GET,
     $provider->getApiUrl().'/rest/api/3/myself',
     $token
 );
@@ -113,7 +113,7 @@ $ ./vendor/bin/phpunit
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/mrjoops/oauth2-jira/blob/develop/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/raddevon/oauth2-jira/blob/develop/CONTRIBUTING.md) for details.
 
 ## Credits
 
@@ -122,4 +122,4 @@ Please see [CONTRIBUTING](https://github.com/mrjoops/oauth2-jira/blob/develop/CO
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/mrjoops/oauth2-jira/blob/develop/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/raddevon/oauth2-jira/blob/develop/LICENSE) for more information.
